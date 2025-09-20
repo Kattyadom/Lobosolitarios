@@ -95,46 +95,55 @@
 </div> 
 
 <!--Estas son las cards amigos, pa que vean ve-->
-<div class="bg-white text-light d-flex justify-content-center align-items-center flex-wrap my-5">
+<div class="bg-white text-light d-flex justify-content-center align-items-stretch flex-wrap my-5">
+  
   <!--Primera card-->
-      <div class="bg-primary text-white p-4 m-3 rounded shadow text-center w-25 h-50">
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
     <h2>Tatiana Paniagua</h2>
     <h4 class="fw-light">Visionaria de Lonely Wolves</h4>
     <p class="mt-3">"Este sitio refleja nuestra esencia."</p>
   </div>
 
-
   <!--Segunda card-->
-  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center w-25 h-50">
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
     <h2>Kattya Dominguez</h2>
     <h4 class="fw-light">Líder de Alianzas</h4>
     <p class="mt-3">"Siempre mirando más allá del mapa."</p>
   </div>
 
-
   <!--Tercera card-->
-  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center w-25 h-50">
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
     <h2>Xavier Villalta</h2>
     <h4 class="fw-light">Gerente general</h4>
     <p class="mt-3">"Lonely Wolves habla por sí mismo."</p>
   </div>
 
-
   <!--Cuarta card-->
-  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center w-25 h-50">
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
     <h2>Nahomy Gil</h2>
     <h4 class="fw-light">Diseñadora de UX</h4>
     <p class="mt-3">"Cada detalle fue pensado para hacer una buena experiencia."</p>
   </div>
 
-
   <!--Quinta card-->
-  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center w-25 h-50">
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
     <h2>Edgar Molina</h2>
     <h4 class="fw-light">Agente de Marketing</h4>
     <p class="mt-3">"Nuestro sitio convierte visitas en oportunidades."</p>
   </div>
+
 </div>
+
+<style>
+  .card-responsive {
+    flex: 1 1 250px;   /* base flexible, mínimo 250px */
+    max-width: 300px;  /* límite pa q no se estiren mucho */
+    min-height: 220px; /* todas al mismo alto mínimo */
+    display: flex;     /* truco para alinear ve jaaaa hacker */
+    flex-direction: column;
+    justify-content: space-between; /* reparte el contenido */
+  }
+</style>
 
 
 <!--AQUÍ ESTÁ EL CARRUSEL, NO TOQUEN AMIGOS-->
