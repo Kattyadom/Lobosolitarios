@@ -6,6 +6,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lobos solitarios</title>
+
+    <style type="text/css">
+        .my_cover
+        {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .container
+        {
+            width: 100%;
+            height: 500px;
+            position: relative;
+        }
+ .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+    </style>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,7 +65,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Servicios</a>
-                </li>
+                </li>              
 
         <!--Dropdown-->
         <li class="nav-item dropdown">
@@ -58,8 +88,243 @@
     </div>
   </div>
 </nav>
+<!--Este es el banner-->
+<div class="container">
+  <img class="my_cover" src="https://baluka.es/cdn/shop/articles/razas-de-perros-mas-comunes.jpg?v=1695689090" alt="Banner">
+  <div class="overlay-text">Lonely wolves</div>
+</div> 
+
+<!--Estas son las cards amigos, pa que vean ve-->
+<div class="bg-white text-light d-flex justify-content-center align-items-stretch flex-wrap my-5">
+  
+  <!--Primera card-->
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
+    <h2>Tatiana Paniagua</h2>
+    <h4 class="fw-light">Visionaria de Lonely Wolves</h4>
+    <p class="mt-3">"Este sitio refleja nuestra esencia."</p>
+  </div>
+
+  <!--Segunda card-->
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
+    <h2>Kattya Dominguez</h2>
+    <h4 class="fw-light">Líder de Alianzas</h4>
+    <p class="mt-3">"Siempre mirando más allá del mapa."</p>
+  </div>
+
+  <!--Tercera card-->
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
+    <h2>Xavier Villalta</h2>
+    <h4 class="fw-light">Gerente general</h4>
+    <p class="mt-3">"Lonely Wolves habla por sí mismo."</p>
+  </div>
+
+  <!--Cuarta card-->
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
+    <h2>Nahomy Gil</h2>
+    <h4 class="fw-light">Diseñadora de UX</h4>
+    <p class="mt-3">"Cada detalle fue pensado para hacer una buena experiencia."</p>
+  </div>
+
+  <!--Quinta card-->
+  <div class="bg-primary text-white p-4 m-3 rounded shadow text-center card-responsive">
+    <h2>Edgar Molina</h2>
+    <h4 class="fw-light">Agente de Marketing</h4>
+    <p class="mt-3">"Nuestro sitio convierte visitas en oportunidades."</p>
+  </div>
+
+</div>
+
+<style>
+  .card-responsive {
+    flex: 1 1 250px;   /* base flexible, mínimo 250px */
+    max-width: 300px;  /* límite pa q no se estiren mucho */
+    min-height: 220px; /* todas al mismo alto mínimo */
+    display: flex;     /* truco para alinear ve jaaaa hacker */
+    flex-direction: column;
+    justify-content: space-between; /* reparte el contenido */
+  }
+</style>
+
+
+<!--AQUÍ ESTÁ EL CARRUSEL, NO TOQUEN AMIGOS-->
+<h3 class="text-center text-primary fw-bold mt-5">Nuestras marcas aliadas</h3>
+<div id="carrusellol" class="carousel slide w-75 mx-auto my-4 position-relative" data-bs-ride="carousel">
+    <!--Data bs ride es para que se mueva solo ok-->
+  <div class="carousel-inner">
+
+
+    <!--Primer slide-->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center">
+        <div class="card shadow rounded-4 w-50 w-md-35 w-lg-20">
+          <img src="https://logos-world.net/wp-content/uploads/2024/08/Greenies-Logo.png" class="card-img-top img-fluid" />
+          <div class="card-body text-center">
+            <h5 class="text-primary fw-bold">Greenies</h5>
+            <p>"Incredibly Tasty. Incredibly Powerful."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Segunda slide-->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <div class="card shadow rounded-4 w-50 w-md-35 w-lg-20">
+          <img src="https://www.liblogo.com/img-logo/tr3659t4e9-trixie-logo-trixie-tie-up-stake-40-cm-amp-dia-9-0-mm.png" class="card-img-top img-fluid" />
+          <div class="card-body text-center">
+            <h5 class="text-primary fw-bold">Trixie</h5>
+            <p>"Friends for life."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Tercera slide-->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <div class="card shadow rounded-4 w-50 w-md-35 w-lg-20">
+          <img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Pedigree_dog_food_logo.png" class="card-img-top img-fluid" />
+          <div class="card-body text-center">
+            <h5 class="text-primary fw-bold">Pedigree</h5>
+            <p>"Todo lo que hacemos es por amor a los perros."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!--Cuarta slide-->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <div class="card shadow rounded-4 w-50 w-md-35 w-lg-20">
+          <img src="https://mms.businesswire.com/media/20250903081373/en/2569267/22/01BARK_logo_blue-CoOwned.jpg" class="card-img-top img-fluid" />
+          <div class="card-body text-center">
+            <h5 class="text-primary fw-bold">BarkBox</h5>
+            <p>"Dog joy, delivered every month."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!--Controles del carrusel (aprecien xq caí en demencia dsp de esto)-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carrusellol" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carrusellol" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+<!-- Sección Nuestro Equipo -->
+    <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Nuestro Equipo 🐾</h2>
+        <p class="text-muted"><small>Personas apasionadas por el bienestar de tu perro</small></p>
+      </div>
+
+    <div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg border-info" style="background: #e0f0ff;">
+    <div class="card-body">
+    
+    <!-- Texto destacado -->
+        <p class="lead text-dark">
+        En <mark class="bg-primary text-white px-1 rounded">Lonely wolves</mark> trabajamos con amor y dedicación
+        para que cada perro tenga lo mejor en <span class="fw-semibold text-primary">alimentación</span>,
+        <span class="fw-semibold text-info">juguetes</span> y <span class="fw-semibold text-danger">accesorios</span>.
+        </p>
+
+              
+    <blockquote class="blockquote border-start border-3 border-info ps-3 mt-4">
+    <p class="fst-italic mb-0">“El amor de un perro es un lazo eterno que nunca se rompe.”</p>
+    <p></p>
+    <footer class="blockquote-footer">Equipo de <cite title="Lonely wolves">Lonely wolves</cite></footer>
+     </blockquote>
+
+<!-- Nota pequeña -->
+    <p class="mt-3 text-muted"><small>Gracias por confiar en nosotros para el bienestar de tu perro.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <!-- Sección Misión y Visión -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Nuestra Misión y Visión 🐶</h2>
+        <p class="text-muted"><small>Comprometidos con el cuidado y bienestar de cada mascota.</small></p>
+      </div>
+    <div class="row g-4">
+
+<!-- Misión -->
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-lg h-100 border-info" style="background: #e0f0ff;">
+        <div class="card-body">
+        <h3 class="card-title text-info">Misión</h3>
+        <p class="card-text lead">
+            Proporcionar <mark class="bg-warning text-dark px-1 rounded">productos de calidad</mark> que mejoren la vida de cada perro, 
+            fomentando la <span class="fw-semibold text-primary">salud</span>, la <span class="fw-semibold text-danger">felicidad</span> y el vínculo con sus familias.
+        </p>
+              <blockquote class="blockquote border-start border-3 border-info ps-3 mt-3">
+                <p class="fst-italic mb-0">“Un perro feliz significa una familia feliz.”</p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+<!-- Visión -->
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-lg h-100 border-info" style="background: #e0f0ff;">
+        <div class="card-body">
+            <h3 class="card-title text-info">Visión</h3>
+            <p class="card-text lead">
+                Convertirnos en la <abbr title="Convertirnos en la mejor empresa del país">empresa</abbr> de productos para perros, 
+                innovando en cada detalle para que nuestros clientes confíen plenamente en <span class="fw-bold text-info">Lonely wolves</span>.
+            </p>
+    <blockquote class="blockquote border-start border-3 border-info ps-3 mt-3">
+        <p class="fst-italic mb-0">“Soñamos con un mundo donde cada perro reciba el cuidado y amor que merece.”</p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Amigos esta es la parte que me toca , ya a hice para que vean que responsable soy-->
+<!--Footer-->
+<footer class="bg-dark text-white mt-5 py-2">
+  <div class="container text-center">
+    <p><strong>Lonely wolves</strong></p>
+    <div class="mb-1">
+      <a href="#" class="text-white me-2">Facebook</a>
+      <a href="#" class="text-white me-2">Instagram</a>
+      <a href="#" class="text-white">Twitter</a>
+    </div>
+    <small class="d-block mt-2">&copy; Todos los derechos reservados.</small>
+  </div>
+</footer>
+   
+
+
 </body>
 </html>
