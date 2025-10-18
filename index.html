@@ -282,6 +282,88 @@
   </button>
 </div>
 
+<!-- Amigos esta es la parte de los modales -->
+<div class="container text-center my-5">
+  <h3 class="text-primary fw-bold mb-4">Explora más de Lonely Wolves 🐺</h3>
+
+  <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#modalInfo">
+    Sobre Nosotros
+  </button>
+  <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#modalMascotas">
+    Mascotas Felices
+  </button>
+  <button type="button" class="btn btn-warning m-2" data-bs-toggle="modal" data-bs-target="#modalSuscripcion">
+    Únete a la Manada
+  </button>
+  <button type="button" class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#modalAdoptar">
+    Adopta con Nosotros
+  </button>
+</div>
+
+
+<!-- Primer modal de "sobre nosotros"-->
+<div class="modal fade" id="modalInfo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-4 text-center">
+      <h5 class="text-primary fw-bold">Sobre Lonely Wolves</h5>
+      <p>
+        Somos una tienda dedicada a ofrecer productos de calidad para el cuidado y felicidad de tus mascotas.  
+        En <strong>Lonely Wolves</strong> creemos que cada mascota merece amor y bienestar. 
+      </p>
+      <button class="btn btn-primary mt-2" data-bs-dismiss="modal">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Segundo modal con breve descripción-->
+<div class="modal fade" id="modalMascotas" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-center p-3">
+      <img src="IMG/perro.webp" alt="Mascota feliz" class="img-fluid rounded mb-3">
+      <p>
+        En Lonely Wolves, cada producto está pensado para ver a tu mascota feliz.  
+        ¡Miles de dueños confían en nosotros! 
+      </p>
+      <button class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Tercer modal , sobre suscripcion a la pagina de lonely wolves, este es como un formulario-->
+<div class="modal fade" id="modalSuscripcion" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <h5 class="text-warning fw-bold text-center">Únete a la Manada</h5>
+      <p class="text-center">Suscríbete para recibir ofertas y consejos sobre el cuidado de tu mascota </p>
+      <form>
+        <input type="text" class="form-control my-2" placeholder="Tu nombre" required>
+        <input type="email" class="form-control my-2" placeholder="Tu correo electrónico" required>
+        <button type="submit" class="btn btn-primary w-100">Suscribirme</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Cuarto modal de "Adoptar"-->
+<div class="modal fade" id="modalAdoptar" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-center p-4">
+      <h5 class="text-danger fw-bold">Adopta con Nosotros </h5>
+      <p>
+        ¿Sabías que también apoyamos la adopción responsable?  
+        Si estás listo para darle un hogar a un nuevo amigo, contáctanos y sé parte del cambio. 
+      </p>
+      <div class="mt-3">
+        <button class="btn btn-secondary me-2" data-bs-dismiss="modal">Tal vez después</button>
+        <button class="btn btn-danger" id="confirmarAdopcion" data-bs-dismiss="modal">¡Quiero Adoptar!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--Amigos esta es la parte que me toca , ya la hice para que vean que responsable soy-->
 <!--Footer-->
 <footer class="bg-dark text-white mt-5 py-2">
