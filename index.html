@@ -62,7 +62,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
             >
-            Más opciones
+        <!--Más opciones-->
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="#">Inicia sesión</a></li>
@@ -144,8 +144,7 @@
         para que cada mascota tenga lo mejor en <span class="fw-semibold text-primary">alimentación</span>,
         <span class="fw-semibold text-info">juguetes</span> y <span class="fw-semibold text-danger">accesorios</span>.
         </p>
-
-              
+  
     <blockquote class="blockquote border-start border-3 border-info ps-3 mt-4">
     <p class="fst-italic mb-0">“El amor de una mascota es un lazo eterno que nunca se rompe.”</p>
     <p></p>
@@ -159,7 +158,6 @@
         </div>
       </div>
     </div>
-  
 
   <!-- Sección Misión y Visión -->
   <section class="py-5">
@@ -211,7 +209,6 @@
     <!--Data bs ride es para que se mueva solo ok-->
   <div class="carousel-inner">
 
-
     <!--Primer slide-->
     <div class="carousel-item active">
       <div class="d-flex justify-content-center">
@@ -224,7 +221,6 @@
         </div>
       </div>
     </div>
-
 
     <!--Segunda slide-->
     <div class="carousel-item">
@@ -239,7 +235,6 @@
       </div>
     </div>
 
-
     <!--Tercera slide-->
     <div class="carousel-item">
       <div class="d-flex justify-content-center">
@@ -253,7 +248,6 @@
       </div>
     </div>
 
-
         <!--Cuarta slide-->
     <div class="carousel-item">
       <div class="d-flex justify-content-center">
@@ -266,10 +260,7 @@
         </div>
       </div>
     </div>
-
-
   </div>
-
 
   <!--Controles del carrusel (aprecien xq caí en demencia dsp de esto)-->
   <button class="carousel-control-prev" type="button" data-bs-target="#carrusellol" data-bs-slide="prev">
@@ -283,13 +274,12 @@
 </div>
 
   <!--Aquí está el formulario chiquillos-->
-
   <div class="container">
     <h2 class="mb-4 text-center text-primary fw-bold mt-5">¡Tu Opinión Importa!</h2>
         <p class="text-muted text-center"><small>Cada comentario nos ayuda a mejorar tu experiencia.</small></p>
-
+  
     <form class="row g-3 needs-validation" novalidate>
-      <!-- Nombre -->
+  <!-- Nombre -->
       <div class="col-md-6">
         <label for="nombre" class="form-label">Nombre/apodo</label>
         <input type="text" class="form-control" id="nombre" required>
@@ -297,7 +287,7 @@
         <div class="invalid-feedback">Pon algo aquí.</div>
       </div>
 
-      <!-- Email -->
+  <!-- Email -->
       <div class="col-md-6">
         <label for="email" class="form-label">Correo</label>
         <input type="email" class="form-control" id="email" required>
@@ -305,7 +295,7 @@
         <div class="invalid-feedback">¿Y el correo?</div>
       </div>
 
-      <!-- Opinión -->
+  <!-- Opinión -->
       <div class="col-12">
         <label for="opinion" class="form-label">Tu opinión</label>
         <textarea class="form-control" id="opinion" rows="4" required placeholder="Dinos tu experiencia cbon Lonely Wolves."></textarea>
@@ -313,7 +303,7 @@
         <div class="invalid-feedback">Escribe algo, don't be shy.</div>
       </div>
 
-      <!-- Calificación -->
+  <!-- Calificación -->
       <div class="col-md-6">
         <label for="rating" class="form-label">Calificación general ⭐</label>
         <select class="form-select" id="rating" required>
@@ -345,6 +335,17 @@
         <button class="btn btn-primary px-4" type="submit">Enviar Opinión 🚀</button>
       </div>
     </form>
+      <!-- Alerta SUCCESS -->
+      <div id="alert-success" class="alert alert-success alert-dismissible fade d-none" role="alert">
+        <strong>¡Éxito!</strong> Todo salió correctamente.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <!-- Alerta DANGER -->
+      <div id="alert-danger" class="alert alert-danger alert-dismissible fade d-none" role="alert">
+        <strong>¡Error!</strong> Algo salió mal. Intenta nuevamente.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+  </div>
 
 <!-- Amigos esta es la parte de los modales -->
 <div class="container text-center my-5">
@@ -364,7 +365,6 @@
   </button>
 </div>
 
-
 <!-- Primer modal de "sobre nosotros"-->
 <div class="modal fade" id="modalInfo" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
@@ -378,7 +378,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Segundo modal con breve descripción-->
 <div class="modal fade" id="modalMascotas" tabindex="-1" aria-hidden="true">
@@ -394,7 +393,6 @@
   </div>
 </div>
 
-
 <!-- Tercer modal , sobre suscripcion a la pagina de lonely wolves, este es como un formulario-->
 <div class="modal fade" id="modalSuscripcion" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
@@ -409,7 +407,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Cuarto modal de "Adoptar"-->
 <div class="modal fade" id="modalAdoptar" tabindex="-1" aria-hidden="true">
@@ -427,6 +424,13 @@
     </div>
   </div>
 </div>
+<div class="container mt-4 text-center">
+<!-- ALERTA ADOPCIÓN -->
+<div class="container mt-4 text-center">
+  <div id="alert-adopcion" class="alert alert-primary alert-dismissible fade d-none" role="alert">
+    <strong>¡Aviso!</strong> Gracias por querer adoptar. Te contactaremos pronto. 💖
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
 
 <!--Amigos esta es la parte que me toca , ya la hice para que vean que responsable soy-->
 <!--Footer-->
@@ -464,5 +468,54 @@
     })();
   </script>
 
+  <script>
+  // Script para alertas
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+    const alertSuccess = document.getElementById("alert-success");
+    const alertDanger = document.getElementById("alert-danger");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      alertSuccess.classList.add("d-none");
+      alertDanger.classList.add("d-none");
+
+      form.classList.add("was-validated");
+
+      if (form.checkValidity()) {
+  
+        alertSuccess.classList.remove("d-none", "fade");
+        alertSuccess.classList.add("show");
+        form.reset();
+        form.classList.remove("was-validated"); 
+      } else {
+     
+        alertDanger.classList.remove("d-none", "fade");
+        alertDanger.classList.add("show");
+      }
+    });
+  });
+</script>
+<!--Alerta de modal ve-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btnAdoptar = document.getElementById("confirmarAdopcion");
+    const alertAdopcion = document.getElementById("alert-adopcion");
+
+    btnAdoptar.addEventListener("click", () => {
+      alertAdopcion.classList.remove("d-none", "fade", "show");
+
+      void alertAdopcion.offsetWidth;
+      
+      alertAdopcion.classList.add("alert", "alert-primary", "alert-dismissible", "fade", "show");
+
+      setTimeout(() => {
+        alertAdopcion.classList.remove("show");
+        alertAdopcion.classList.add("d-none");
+      }, 5000);
+    });
+  });
+</script>
 </body>
 </html>
